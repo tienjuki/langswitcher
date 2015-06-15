@@ -1,0 +1,13 @@
+{
+    "name": "fuel/langswitcher",
+    "description": "language switcher",
+    "type": "fuel-package",
+    "authors": [
+        {
+            "name": "phan ngoc tien",
+            "email": "phan_ngoctien@co-mit.com.vn"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
