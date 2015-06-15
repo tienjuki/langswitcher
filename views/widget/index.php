@@ -1,9 +1,6 @@
 <form id="language-form" method="POST">
 <?php
- echo Form::select('language_dropdown', $lang, array(
-    'en' => 'English',
-    'ja' => 'japan'
-));?>    
+ echo Form::select('language_dropdown', $lang, $langs);?>    
 </form>
 <script>
 $(function() {

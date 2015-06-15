@@ -10,7 +10,7 @@ class Langswitcher
 	 * Default config
 	 * @var array
 	 */
-	protected static $_defaults = array();
+	protected static $_defaults = array(‘langs’=>array());
 
 	/**
 	* Driver config
@@ -80,7 +80,8 @@ class Langswitcher
         public function show(){
                 \Fuel\Core\Asset::add_path('/folder/',array('js'));
                 echo \Fuel\Core\Asset::js(array('jquery.js'));
-                
+                $langs = $this->get_config(‘langs’);
+
                 if (\Input::method() == 'POST'){
                         if (\Input::method() == 'POST'){
                                 $lang = \Input::post('language_dropdown');
@@ -91,7 +92,7 @@ class Langswitcher
                 {
                         $lang = \Fuel\Core\Cookie::get("langSelected");
 
-                        return \Response::forge(\View::forge('widget/index',array('lang'=>$lang)));
+                        return \Response::forge(\View::forge('widget/index',array('lang'=>$lang,’langs’=>$langs)));
                 }
         }
 }
