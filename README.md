@@ -20,7 +20,7 @@ Simply add the libraries to your project's `composer.json` then run `php compose
 Simply add `langswitcher` to your config.php `always_loaded.packages` config option.
 
 note langswitcher require jquery so download query.js and save to assets folder
-
+```
 ## Usage
 
 ```php
