@@ -19,14 +19,14 @@ Simply add the libraries to your project's `composer.json` then run `php compose
 
 Simply add `langswitcher` to your config.php `always_loaded.packages` config option.
 
-note langswitcher require jquery so download query.js and save to assets folder
+note langswitcher require jquery so download jquery.js and save to assets folder
 ```
 ## Usage
 
 ```php
 // add follow code to template.php file
 
-$config = array('langs'=>array('en'=>'English','vi'=>"Viet nam"));
+$config = array('langs'=>array('en'=>'English’,’ja’=>”Japan”));
         
 $langswitcher = Langswitcher\Langswitcher::forge($config);
         
